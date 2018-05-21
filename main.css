@@ -1,0 +1,37 @@
+
+body{
+    width:100%;
+    height: 100%;
+    background-color:white;
+    
+}
+header{
+    background-color: mediumblue;
+    width: 100%;
+    height: 50px;
+}
+.icons{
+    background-color: red;
+    width:40%;
+    margin-left: 5%;
+}
+.icons img{
+    width: 20px;
+}
+.book-store{
+  background-color: green;
+  margin-left:60%;
+  width:30%;
+  margin-top:-29px; 
+ color:white; 
+ font-size:12px;   
+}
+.book-store img{
+    width: 15px;
+    margin-left:1%;
+    margin-top: 2%;
+}
+.logo{
+    background-color: cornsilk;
+    
+}
