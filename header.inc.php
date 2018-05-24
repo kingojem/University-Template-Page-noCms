@@ -9,11 +9,15 @@
     </div>
     <div class="book-store">
        <h1 style ="font-size:1vw;">Campus Bookstore (New!)</h1>
-       <img src="images/11.png"  style="max-width:100%;" id ="cart" alt="Bookstore">
+       <img src="images/cart.jpg"  style="max-width:100%;" id ="cart" alt="Bookstore">
     </div>
     <div class="container">
         <div class ="logo">
             <img src ="images/logo.jpg" style="max-width:100%;">
+        </div>
+        <div class ="student-login">
+           <a href =""> <img src="images/studentlogin.jpg" alt=""> </a>
+            <!-- <img id ="prem" src="images/premium.jpg" alt=""> -->
         </div>
     </div>
     <nav role="navigation">
