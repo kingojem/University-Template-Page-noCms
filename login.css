@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    background-color: #abd5f1;
+}
+.form{
+    position: absolute;
+    top:20%;
+    left:30%;
+    background-color:snow; 
+    width:40%;
+    height: 360px;
+    border-radius: 20px;
+    margin-bottom: 100%;
+}
+/* #ffd700  */
+/* #abd5f1 */
+/* #f8e160 */
+img{
+    width:75px;
+    height:75px;
+    border-radius:50px;
+    margin-top:-5%;
+    margin-left:45%;
+    margin-bottom: 4%;
+}
+input#username , input#password{
+    margin-left:10%;
+    width:80%;
+    /* height: 200px; */
+    border-bottom: 1px solid #c0c0c0;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    background-color: transparent;
+    padding:5px;
+    padding-left:45px;
+    margin-bottom:5%;
+    text-align:left;
+    background-image: url("images/profile1.png");
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    background-size: 20px;
+    display: block;   
+}
+input#password{
+    background-image: url("images/key1.png");
+    background-repeat: no-repeat;
+    background-position: 8px 2px;
+    background-size: 20px;
+    margin-bottom:2%;
+}
+input#username:focus , input#password:focus{
+    border-bottom: 1px solid #180d53;
+}
+input#login{
+    margin-left:10%;
+    width:80%;
+    margin-top:5%;
+    font-size:100%;
+    border-radius: 10px;
+    border: 0px;
+    color:snow;
+    padding:5px;
+    background-color:green;
+    margin-bottom: 5%;
+    /* rgb(33, 182, 33) */
+}
+input#login:hover{
+    background-color:#180d53;
+}
+a#forgetpassword{
+    text-decoration: none;
+    margin-left:45%;
+    font-size: 80%;
+    color: gray
+}
+.copyright{
+   color:#180d53;
+   font-size:80%;
+  position: absolute;
+  top: 90%;
+  left:3%
+}
+@media only screen and (max-width: 600px){
+    img{
+        width: 45px;
+        height:45px;
+        margin-left:33%;
+        margin-top:-6%
+    }
+   .form{
+       width:auto;
+       height: auto;
+       left: 18%;
+       
+       
+   }
+}

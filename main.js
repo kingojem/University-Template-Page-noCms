@@ -42,56 +42,49 @@
     
     
 
-    // function tabcontrol(){
+        function dropDown1(){
+            document.getElementById("myDropDown1").classList.toggle("show");
+        }
+        function dropDown2(){
+            document.getElementById("myDropDown2").classList.toggle("show"); 
+        }
+        function dropDown3(){
+            document.getElementById("myDropDown3").classList.toggle("show"); 
+        }
         
-    //     
-    //     
-    //     
-    //     while(tabcontent[0].style.display ="block"){
-    //         tbtn[0].style.backgroundColor ="gold";
-    //     }
-    // }
-    
-
-
-
-
-
-
-
-// //     function tabby (evt,section){
-// //      var i,tablinks,tabcontent;
-// //      tabcontent= documents.getElementsByClassName('tabcontent');
-// //      for(i=0; i < tabcontent.length;i++){
-// //          tabcontent[i].style.display="none";
-// //      }
-// //      tablinks = document.getElementsByClassName('tablinks')
-// //      for(i=0; i < tablinks.length; i++){
-// //          tablinks[i].className = tablinks[i].className.replace('focus','');
-
-// //      }
-// //      document.getElementById('section').style.display = "block";
-// //     evt.currentTarget.className += " focus";
-// // }
-// function tabcontrol(){
-//     var i;
-//     var tabcontent = document.getElementsByClassName("tabcontent");
-//     for(i =0; i < tabcontent.length; i++){
-//         if(i > 0){
-//             tabcontent[i].style.display ="none";
-//         }
-//     }
-// }
-// function tabby(){
-//     var tablinks = document.getElementsByClassName("tablinks");
-//     var tabcontent = document.getElementsByClassName("tabcontent");
-//     for(var i =0; i < tabcontent.length; i++){
-//         // tabcontent[i].style.display ="none";
-//         for( var j = 0 ; j < tablinks.length; j++){
-//             if( i > 0){
-//                 // tabcontent[i].classList.replace(tabcontent[i].style.display="show");
-//                 tabcontent[i].classList.toggle
-//             }
-//         }
-//     }
-// }
+        window.onclick = function(event){
+            if (!event.target.matches('.dropbtn')){
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for(i =0; i< dropdowns.length;i++){
+                    var opendropdowns = dropdowns[i];
+                    if(opendropdowns.classList.contains('show')){
+                        opendropdowns.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        
+        
+        /*the modal box */
+        var modal = document.getElementById("myModal");
+         var contact = document.getElementById("contact");
+         var close = document.getElementsByClassName('close')[0];
+         var submit = document.getElementById("submitComment");
+         var body = document.getElementById("mainBody");
+         contact.onclick = function(){
+             modal.style.display="block";
+         }
+         close.onclick = function(){
+             modal.style.display ="none";
+         }
+        //  submit.onclick = function(){
+        //      modal.style.display ="none";
+        //  }
+         window.onclick = function(event){
+             if(event.target == body){
+                modal.style.display ="none";
+             }
+            
+         } /*This ends the hidden modal box */

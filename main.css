@@ -1,24 +1,89 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:auto;
+    height:auto;
+    overflow:hidden;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.8);
+    margin-right:auto;
+    margin-left:35%;
+    margin-top:5%;
+}
+.modal h4{
+    border-bottom: 2px dotted blue;
+    color: green;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding:20px;
+    border:0px solid #888;
+    width:80%;
+}
+.close{
+    color:red;
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+    margin-top:5%;
+    margin-right:10%;
+}
+.close:hover, .close:focus{
+    color:#aaa;
+    text-decoration: none;
+    cursor:pointer;
+}
+form{
+    margin-left:5%;
+}
+#fullName , #email{
+    width:50%;
+    background-color: transparent;
+    border:1px solid silver  ;
+    margin-left:3%;
+    margin-bottom: 5%;
+    padding:2%;
+    font-size:10px;
+    text-align:center;
+    border-radius: 5px;
+}
+#email{
+    margin-left:14%;
+}
+#comment{
+    border:1px solid silver;
+    margin-bottom: 5%;
+    resize: none;
+}
+#submitComment{
+    width:auto;
+    color:white;
+    font-weight: bold;
+    background-color: blue;
+    border:0px;
+    
+}
 body{
     width:100%;
     background-color:white;
-    margin:0px;
-    
-    
+    margin:0px;   
 }
 header{
     background-color: #180d53;
-    width: 100%;
-    height: 143px;
+    width: 90%;
+    height: auto;
     border-bottom: 7px solid #daa520;
+    margin-left:5%;
+    margin-right:5%;
 }
 .icons{
     background-color: transparent;
-    width:40%;
+    width:10%;
     margin-left: 5%;
     position: relative;
-}
-.icons img{
-    width: 10s0px;
 }
 .book-store{
   background-color: transparent;
@@ -29,9 +94,11 @@ header{
  font-size:1px; 
  position: relative;  
 }
+.book-store h1{
+    font-size:1vw;
+}
 #cart{
-    width: 30px;
-    margin-left:40%;
+    width: 42px;
     position: absolute; 
     top: 0%; 
     margin-top:-5px; 
@@ -79,7 +146,6 @@ nav{
     color:white;
     padding:9.5px;
     width:100%;
-    /* margin-left: 15%; */
     font-size:15px;
     cursor:pointer;
     border:0px;
@@ -99,10 +165,10 @@ nav{
     display:inline-block;
 }
 .dropdown-content {
-    display: none;
+    display:none;
     position: absolute;
     background-color: #2980B9;
-    max-width: 150px;
+    max-width: 145px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -157,41 +223,6 @@ nav{
 .mySlidesfade{
     display:none;
 }
-.prev, .next{
-    position:absolute;
-    top:10%;
-    cursor:pointer;
-    width:auto;
-    margin-top:100px;
-    padding:2px;
-    color:red;
-    font-weight:bold;
-    font-size:28px;
-    transition:0.6s ease;
-    border-radius:70px
-}
-.next{
-    right:0;
-    /* border-radius : 3px 3px 3px 0px; */
-}
-.next:hover , .prev:hover{
-    background-color:rgba(0,0,0,0.8);
-}
-/* .slider-info{
-    color:#f0f0f0;
-    font-size:18px;
-    padding:8px 12px;
-    position: absolute;
-    bottom:8px;
-    width:100%;
-    text-align:center;      This Was Commented Intentionally.... if Slider is to use info or about add in the html
-}
-.slider-about{
-    color: #f0f0f0;
-    font-size:12px;
-    position: absolute;
-    top:3px;
-} */
 .fade{
     -webkit-animation-name: fade;
     animation-name: fade;
@@ -308,16 +339,17 @@ nav{
     background-color: #2980B9;
 }
 .tabs button:focus{
-    background-color: gold;
+    background-color: #ffd700;
 }
 .tabcontent{
-    width:89%;
+    width:87%;
     display: flex;
     border-top: 8px solid gold;
     background-color:#180d53;
     height: auto;
     margin-top:0%;
     margin-left:6%;
+    margin-right:5%;
     /* display:none; */
 }
 .tabcontent img{
@@ -328,13 +360,363 @@ nav{
 /*ends tabs */
 .footnote{
     display: flex;
-    background-color:snow;
-    width: 89%;margin-top:2%;
+    background-color: mediumpurple;
+    width: 89%;
+    margin-top:2%;
+    font-size:3vw;
     margin-left:6%;
-    flex-direction: row;
+    flex-flow: nowrap;
+    border-top:1px solid #c0c0c0;
+    height: auto;
 }
+.footnote h4{
+    font-size:50%;
+    margin-bottom: 0px;
+}
+.a h4{border-bottom:1px solid green;color:purple}
+
+.b h4{border-bottom:1px solid blue;color:red}
+.c h4{border-bottom:1px solid #ffd700;color:blue}
+
+
 ul{list-style-type: none;}
-li{margin-left:-15%}
-.a,.b,.c{
-margin-left:10%;
+/* .l31 {
+ 
+} */
+li{margin-left:0%;font-size:45%;}
+
+/*Ends Footer */
+/*Media Queries */
+@media only screen and (max-width: 600px){
+
+    #fixassist button{
+       /* width: 100%; 
+       font-size:3.5vw; */
+       display:none;
+    }
+    #fixassist{
+        margin-left:2%;
+    }
+   .footnote{
+       /* display: none; */
+       margin-left:5%;
+       padding: 0px;
+       width:auto;
+       font-size:3vw;
+   }
+  
+  .a1 {
+       width:20%;
+      font-size:70%;
+      margin-top:2%;
+   }
+   .a,.b,.c{
+       width:25%; 
+       margin-top:2%;
+   }
+   .a h4, .b h4 ,.c h4{
+        font-size:80%;
+        width:58%;
+        flex-wrap:nowrap;  
+    }
+    .b h4{width:30%;}
+    .c h4{width:25%;}
+    .a ul, .b ul, .c ul{
+        margin-top:0%;
+        width: auto;
+        margin-left:2%;
+    }
+    li{
+        float:none;
+        margin-left:-40px;
+        margin-top:0px;
+        font-size:2.2vw;
+     }
+   header{
+       height: auto;
+       width:auto;
+   }
+  .icons{
+      width:50%;
+  }
+   .icons img{
+    width: 400%;
+    
+   }
+   .book-store {
+       display:none;
+   }
+  
+   .container{
+       margin-top:0%;
+   }
+   .logo{
+    width: 80%;
+    margin-left:-10%;
+   }
+   .student-login img{
+       width:23%;
+       margin-top: 0%;
+      float: left;
+      margin-left: 60%;
+   }
+   nav{
+       float:none;
+       margin-left:1%;
+   }
+   .slider-container{
+       margin-left:2%;
+   }
+   .dropbtn{
+       width:auto;
+       margin-top: 15%;
+   }
+   .dropbtn:focus{
+    border-bottom:0px #daa520;
+    }
+    .material{
+        margin-left:3%;
+    }
+    .material h3{
+        font-size: 50%;
+        width:auto;
+    }
+    .material button{
+        width:125px;
+        margin-right:1%;
+        font-size:10px;
+        font-weight: normal;
+    }
+    .container-link img{
+        width:100%;
+    }
+    .campus-life,  .admission{
+        width: auto;
+        font-size:12px;
+        overflow: scroll;
+    }
+    .atletics , .news-event{
+        width: auto;
+        font-size:12px;
+        overflow: scroll;
+    }
+    #ourMission, #lecturers{
+        width: auto;
+    }
+    #facilities,#schoolClub{
+        width: auto;
+    }
+    .tabcontent{
+        width:auto;
+    }
+   
+}
+@media only screen and (min-width:601px){
+    body{ 
+        width:auto;
+        height: auto;
+        box-sizing: border-box;
+    }
+    header{
+        width: auto;
+        height: auto;
+    }
+    #cart{
+        margin-left:65%;
+        margin-top:-5px; 
+        width:auto;
+    }
+    .icons{
+        width:50%;
+    }
+    .icons img{
+        margin-top:0px;
+        /* width: 100%; */
+    }
+    .book-store{
+        margin-left: 50%;
+        
+    }
+    .book-store h1{
+        font-size:1.5vw;
+    }
+    .logo img{
+        width: 28%;
+    }
+    .student-login{
+        width:100%;
+        margin-top: -11%;
+    }
+    .logo{
+        margin-top: 0%;
+    }
+    nav{
+        margin-left:-1%;
+    }
+    .campus-life, .admission
+     {
+        width: auto;
+        font-size:auto;
+        overflow: auto;
+    }
+    .atletics, .news-event{
+        width: auto;
+        font-size:auto;
+        overflow: auto;
+    }
+    #ourMission, #lecturers{
+        width: auto;
+    }
+    #facilities, #schoolClub{
+        width: auto;
+    }
+    .tabcontent{
+        width:auto;
+        overflow: hidden;
+    } */
+    .footnote{
+        display: none; 
+        margin-left:0%;
+        padding: 0px;
+        /* overflow: hidden; */
+        width:88%;
+    }
+    .material h3{font-size: 70%;}
+    .material button {margin-left: 10%}
+    .campus-life img, .admission img{ width:100%;}
+    .atletics img, .news-event img{width: 100%}
+    .a1 {
+        width:20%;
+       font-size:50%;
+       margin-top:3%; 
+       margin-left: 5% ;
+       margin-right:8%;
+    }
+    .a,.b,.c{
+        width:25%; 
+        margin-top:0%;
+    }
+    .a h4, .b h4 ,.c h4{
+         font-size:80%;
+         width:60%;
+     }
+     .b h4{width:50%;}
+     .c h4{width:38%;}
+     .a ul, .b ul, .c ul{
+         margin-top:0%;
+         width: auto;
+         margin-left:2%;
+     }
+     li{
+         float:none;
+         margin-left:-40px;
+         margin-top:0px;
+         font-size:2.2vw;
+      }
+   
+}
+@media only screen and (min-width: 768px) {
+    .book-store h1{
+        font-size:1.5vw;
+    }
+    #cart{
+      margin-left:63%;
+      width: 13%;
+    }
+    nav{margin-left:10%}
+   .container{
+       margin-top:3%;
+   }
+   .material h3{
+    margin-left: 1%;
+    font-size:95%
+    }
+    .a,.b,.c{
+        margin-left:20px;
+        width:28%;
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .a h4, .b h4, .c h4{width:70%;}
+    .b h4 {width: 50%;}
+    .c h4{width:40%;}
+  
+} 
+@media only screen and (min-width: 1200px){
+    .book-store h1{font-size:1vw;}
+    #cart{ margin-left:45%;width:30px;}
+    .a1{
+        font-size:30%;
+        width:auto;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+    .a,.b,.c{
+        margin-top: 2%;
+        padding: 15px;
+        height: 100px;
+        margin-left:0px;
+        display: block;
+        width:28%;
+        flex-wrap:nowrap;
+    }
+    .a h4, .b h4 ,.c h4{
+        margin-top:-5%;
+        margin-left:16%;
+        width:38%;
+        flex-wrap:nowrap;
+        
+    }
+    .student-login{
+        width:auto;
+    }
+    .student-login img{
+        width:auto;
+        margin-left:-60%;
+        margin-top:37%;
+    }
+    .b h4{width:30%}
+    .c h4{width:25%}
+    .a ul, .b ul, .c ul{
+        margin-top:0%;
+        width: auto;
+        margin-left:2%;
+    }
+    li{
+        float:none;
+        margin-left:0px;
+        padding:0px;
+        margin-top:0px;
+        font-size:1.3vw;
+     }
+}
+ @media only screen  and (device-width:600px){
+    .student-login{
+        width:40%;
+        margin-top: -10%;
+    }
+    nav{
+        margin-left: 25%;
+    }
+    
+    
+} 
+@media only screen  and (device-width:384px){
+    .student-login img{margin-top: -2%;}
+}
+@media only screen  and (device-width:640px){
+    #cart{ width:27px }
+}
+@media only screen  and (device-width:411px){
+    .student-login{margin-top: -20%;}
+}
+@media only screen  and (device-width:412px){
+    .student-login{margin-top: -20%;}
+}
+@media only screen  and (device-width:375px){
+    .student-login{margin-top: -21%;}
+}
+@media only screen  and (device-width:414px){
+    .student-login{margin-top: -21%;}
 }

@@ -12,3 +12,33 @@
     &xdtri;
 </body>
 </html>
+
+
+
+if(isset($_POST['search'])&& isset($_POST['replace']) && !empty($_POST['search']&& $_POST['replace'])){
+    $search = $_POST['search'];
+$replace = $_POST['replace'];
+$search_length =strlen($search);
+$offset =0;
+   $searchword = "this is a giaant move amade to illutionize the practical aspect of the sector ,  but i really so say so...";
+    echo $searchword;
+     while($stringposition = strpos($searchword,$search,$offset)){
+        $offset = $stringposition + $search_length;
+         echo "you search for : $search" . "It is found at Position: $stringposition" ."<br>";
+         $replace_word = substr_replace($searchword,$replace,25,8);
+         echo $replace_word;
+        
+     }
+
+}
+?>
+<form action ="elogin.php" method="POST">
+    <textarea name="Comment" id="" cols="30" rows="10"> Ali is a bad Man Ali</textarea><br>
+
+<Label>Search:</Label><input type="text"  name="search"> <br>
+<label>Replace:</label><input type ="text" name ="replace"> <br>
+
+
+<input type ="submit" value="submit">
+</form>
+&larr;

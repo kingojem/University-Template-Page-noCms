@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include_once("header.inc.php");
+
 ?>
 <html>
 <head>
@@ -10,7 +11,7 @@ include_once("header.inc.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />   
 </head>
-<body onload ="tabcontrol()">
+<body id ="mainBody" onload ="tabcontrol()">
     <div class = "slider-container">
         <div class = "mySlidesfade">
         <img src="images/grad2.jpg" alt="Graduating Student" style="width:100%;margin-left:0%">
@@ -60,10 +61,11 @@ include_once("header.inc.php");
     </div>
     <div class ="container" onload ="tabcontrol()">
         <div class ="tabs" id ="tabs" >
-            <button name ="1"class ="tablinks" onclick ="tabby0()">Our Misssion </button>
-            <button name="1" class ="tablinks" onclick ="tabby1()">Lecturers</button>
-            <button name="1" class ="tablinks" onclick ="tabby2()">Facilities & Infrastructures </button>
-            <button name="1" class ="tablinks" onclick ="tabby(event, 'clubs')"> School Clubs & Activities </button>
+            <button name ="1" id="ourMission" class ="tablinks" onclick ="tabby0()">Our Misssion </button>
+            <button name="1"  id ="lecturers" class ="tablinks" onclick ="tabby1()">Lecturers</button>
+            <button name="1" id ="facilities"class ="tablinks" onclick ="tabby2()">Facilities & Infrastructures </button>
+            <button name="1" id ="schoolClub" class ="tablinks" onclick ="tabby(event, 'clubs')"> School Clubs & Activities </button>
+            
         </div>
         <div id ="ourmission" class ="tabcontent">
             <div>
