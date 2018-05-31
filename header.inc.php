@@ -16,8 +16,7 @@ $script_name =$_SERVER['SCRIPT_NAME'];
             <img src ="images/logo.jpg" style="max-width:100%;">
         </div>
         <div class ="student-login">
-           <a target="_blank" href ="<?php echo $student_login?>"> <img src="images/studentlogin.jpg" style="max-width:100%;" alt=""> </a>
-            <!-- <img id ="prem" src="images/premium.jpg" alt=""> -->
+           <a target="_blank" href ="<?php echo $student_login?>"> <img src="images/studentlogin.jpg" style="max-width:100%;" alt=""></a>
         </div>
     </div>
     <nav role="navigation">
