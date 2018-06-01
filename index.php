@@ -9,7 +9,7 @@ include_once("header.inc.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Campus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />   
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />   
 </head>
 <body id ="mainBody" onload ="tabcontrol()">
     <div class = "slider-container">

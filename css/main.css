@@ -360,7 +360,7 @@ nav{
 /*ends tabs */
 .footnote{
     display: flex;
-    background-color: mediumpurple;
+    background-color: transparent;
     width: 89%;
     margin-top:2%;
     font-size:3vw;
@@ -664,7 +664,7 @@ li{margin-left:0%;font-size:45%;}
     .a h4, .b h4 ,.c h4{
         margin-top:-5%;
         margin-left:16%;
-        width:38%;
+        width:58%;
         flex-wrap:nowrap;
         
     }
@@ -676,7 +676,7 @@ li{margin-left:0%;font-size:45%;}
         margin-left:-60%;
         margin-top:37%;
     }
-    .b h4{width:30%}
+    .b h4{width:50%}
     .c h4{width:25%}
     .a ul, .b ul, .c ul{
         margin-top:0%;

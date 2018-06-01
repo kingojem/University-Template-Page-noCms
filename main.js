@@ -83,7 +83,7 @@
         //      modal.style.display ="none";
         //  }
          window.onclick = function(event){
-             if(event.target == body){
+             if(event.target == body){/*goes away when click outside modal psst!... body alone*/
                 modal.style.display ="none";
              }
             

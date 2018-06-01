@@ -70,7 +70,6 @@ $script_name =$_SERVER['SCRIPT_NAME'];
             }       
        ?>
        <form action="<?php $script_name ?>" method="POST">
-                <?php?>
            <label for="fullName">Full Name:</label> <input type ="text" name ="fullName" id ="fullName" class ="fullName" placeholder="Your Name" required ><br>
            <label for="email">Email:</label><input type="email" name="email" id="email" required placeholder="@example.mail.com"><br>
            <label style ="color:red" id ="comment">Your Message</label>

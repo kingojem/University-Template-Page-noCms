@@ -1,4 +1,4 @@
-#This is a web page having to pages, the general purpose is to continually build and revisit the era of no help; this as been structured with no external libraries
+# UniTemp
 #AUTHORS: Emmanuel Israel
 #CHANGELOG
     #Date:   Mon May 28 16:19:59 2018 +0100
