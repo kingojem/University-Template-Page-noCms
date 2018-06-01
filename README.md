@@ -1,4 +1,4 @@
-# UniTemp
+# Uniniversity Template 
 #AUTHORS: Emmanuel Israel
 #CHANGELOG
     #Date:   Mon May 28 16:19:59 2018 +0100

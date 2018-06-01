@@ -35,8 +35,5 @@
                 <li>Map</li>
             </ul>
         </div>
-        <!-- <div id ="fixassist">
-            <button> Mail Us</button>
-        </div> -->
     </div>
 </div>

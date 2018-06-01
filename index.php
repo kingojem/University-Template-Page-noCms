@@ -95,6 +95,6 @@ include_once("header.inc.php");
     <?php
     include('footer.inc.php');
     ?>
-    <script src="main.js"> </script>
+    <script src="js/main.js"> </script>
 </body>
 </html>

@@ -81,4 +81,4 @@ $script_name =$_SERVER['SCRIPT_NAME'];
     </div>
 </header>
 
-<script src ="main.js"></script>
+<script src ="js/main.js"></script>
