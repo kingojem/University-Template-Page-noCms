@@ -7,6 +7,7 @@
         #Tabs Have Been Corrected, But It was scripted Manuallly and footer is added
     #Date:   Wed May 23 10:43:54 2018 +0100
         #Home Page 70% Done, Mimiking WordPress Campus Theme
+        #file restructuring.
 #COPYING / LICENSE: 
     #All Images May Be Subjected TO copyright; all images was coined from www.bing.com
     #this is intended for practice only..
